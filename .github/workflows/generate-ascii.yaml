@@ -32,11 +32,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
 
-      - name: Read file
-        uses: cat dragon.txt
+        - name: Read file
+          run: cat dragon.txt
 
-      - name: Deploy Services
-        run: echo Deploying ...
+        - name: Deploy Services
+          run: echo Deploying ...
 
 
   
