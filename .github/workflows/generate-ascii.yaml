@@ -19,6 +19,12 @@ jobs:
         - name: sleep for 30 sec
           run: sleep 30
 
+  build_job_2:
+    runs-on: ubuntu-latest
+    steps:        
+        - name: sleep for 10 sec
+          run: sleep 10
+
 
   
 
