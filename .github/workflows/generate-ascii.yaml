@@ -2,7 +2,7 @@ name: generate ascii code
 on: push
 
 jobs:
-    first_job:
+    build_job_1:
         runs-on: ubuntu-latest
         steps:
             - name: checkout Repo
@@ -15,5 +15,31 @@ jobs:
               run: |
                chmod +x ascii-script.sh 
                ./ascii-script.sh
+
+            - name: sleep for 30 sec
+              run: sleep 30
+
+    test_job_2:
+        runs-on: ubuntu-latest
+        steps:
+            - name: sleep 10 sec
+              uses: sleep 10
+
+            - name: Test File Exist
+              uses: grep -i "dragon" dragon.txt
+
+
+    test_job_3:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Read file
+              uses: cat dragon.txt
+
+            - name: Deploy
+              run: echo Deploying ...
+              
+
+
+
 
 
