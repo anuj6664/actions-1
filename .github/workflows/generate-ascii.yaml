@@ -34,7 +34,7 @@ jobs:
         - uses: actions/download-artifact@v4
           with:
             name: dragon artifact
-            path: dragon.txt
+
 
         - name: Test File Exist
           run: grep -i "dragon" dragon.txt
