@@ -25,6 +25,11 @@ jobs:
         - name: sleep for 10 sec
           run: sleep 10
 
+        - name: Test File Exist
+          run: grep -i "dragon" dragon.txt
+
+
+
 
   
 
