@@ -22,8 +22,8 @@ jobs:
   test_job_2:
     runs-on: ubuntu-latest
     steps:
-        - name: sleep 10 sec
-          run: sleep 10
+        - name: echo 
+          run: echo "job 2"
 
         - name: Test File Exist
           uses: grep -i "dragon" dragon.txt
