@@ -24,8 +24,8 @@ jobs:
         run: echo "$RUNNER_CONTEXT"
       - name: Dump secret context
         env:
-          GH_TOKEN: ${{ tojson(secrets) }}
-        run: echo "$GH_TOKEN"
+          SECRET_CONTEXT: ${{ tojson(secrets) }}
+        run: echo "$SECRET_CONTEXT"
       - name: Dump matrix context
         env:
           MATRIX_CONTEXT: ${{ toJson(matrix) }}
