@@ -1,0 +1,39 @@
+name: exploring variable and secrets
+on: 
+  # schedule:
+  #   - cron: "5 * * * *"
+  # push
+  workflow_dispatch:
+
+
+
+jobs:
+  deploy-on-ubuntu:
+    runs-on: ubuntu-latest
+    steps:
+        - name: Echo Docker Details
+          run: echo info
+
+        - name: Run Images
+          run: docker run hello-world
+
+  deploy-on-windows:
+    runs-on: windows-latest
+    steps:
+        - name: Echo Docker Details
+          run: echo info
+
+        - name: Run Images
+          run: docker run hello-world
+
+
+
+  
+
+
+              
+
+
+
+
+
