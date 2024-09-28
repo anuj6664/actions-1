@@ -24,7 +24,7 @@ jobs:
           run: echo info
 
         - name: Run Images
-          run: docker run hello-world of docker
+          run: docker run hello-world 
 
 
 
