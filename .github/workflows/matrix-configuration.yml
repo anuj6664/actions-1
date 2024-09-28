@@ -1,4 +1,4 @@
-name: matrix configuration
+name: matrix example-1
 on: 
   # schedule:
   #   - cron: "5 * * * *"
