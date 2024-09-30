@@ -10,9 +10,9 @@ on:
     #     - if-condition
 
     branches:
-        - main
+        - '!main'
         - '!if-condition/*'
-        - '!filters/*'
+        - 'fearure/filters/*'
 
 
 jobs:
