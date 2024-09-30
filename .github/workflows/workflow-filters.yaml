@@ -14,7 +14,15 @@ on:
         - '!if-condition/*'
         - 'feature/filters'
 
+  pull_request: 
+    types: 
+      - opened
+      - closed
 
+    paths-ignore: 
+      - README.MD
+    branches: 
+      - main
 jobs:
   hello:
     runs-on: ubuntu-latest
