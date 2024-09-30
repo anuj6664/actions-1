@@ -1,0 +1,21 @@
+name: exploring workflow-filters 
+on: 
+  # schedule:
+  #   - cron: "5 * * * *"
+  # push
+  workflow_dispatch:
+  push:
+    # branches-ignore: 
+    #     - feature/*
+    #     - if-condition
+
+    branches:
+        - main
+        - '!if-condition/*'
+
+
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+    steps:
+    - run: echo this workflow/job/step is executed for event type - ${{github.event_name}}
