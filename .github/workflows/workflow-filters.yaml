@@ -12,7 +12,7 @@ on:
     branches:
         - '!main'
         - '!if-condition/*'
-        - 'fearure/filters/*'
+        - 'feature/filters/*'
 
 
 jobs:
